@@ -6,7 +6,7 @@ class Positive
   {
     Scanner sc=new Scanner(System.in);
     System.out.println("Enter a number");
-    Long number=sc.nextLong();
+    long number=sc.nextLong();
     if(number>0)
       System.out.println("Positive");
      else if(number<0)
