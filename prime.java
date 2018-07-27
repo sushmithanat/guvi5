@@ -1,18 +1,17 @@
 import java.util.Scanner;
-class pali
+class prime
 {
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
-		int dup1=num,dup=0,rem=0;
-		while(num>0)
+		int count=0;
+		for(int i=1;i<=num;i++)
 		{
-			rem=num%10;
-			dup=dup*10+rem;
-			num=num/10;
+			if(num%i==0)
+			count++;
 		}
-		if(dup1==dup)
+		if(count==2)
 			System.out.println("yes");
 		else
 			System.out.println("no");	
