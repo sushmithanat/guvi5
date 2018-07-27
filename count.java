@@ -4,14 +4,14 @@ class count
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
-		long num=sc.nextLong();
-		long num1,count=0;
-		while(num>0)
+		int num=sc.nextInt();
+		int power=sc.nextInt();
+		int result=1;
+		while(power!=0)
 		{
-			num1=num%10;
-			count++;
-			num=num/10;
+			result *= num;
+			power--;
 		}
-		System.out.println(count);
+		System.out.println(result);
 	}
 }
