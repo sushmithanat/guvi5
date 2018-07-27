@@ -1,4 +1,3 @@
-# guvi5
 import java.util.Scanner;
 class Positive
 {
