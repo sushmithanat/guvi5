@@ -5,19 +5,18 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class stringnumber1
+class wordsinline
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
 		String str=sc.nextLine();
-		if(isNumeric(str))
-			System.out.println("yes");
-		else
-			System.out.println("No");
-	}
-	public static boolean isNumeric(String str)
-	{
-		return str.matches("-?\\d+(\\.\\d+)?");
+		int count=0;
+		for(int i=0;i<str.length();i++)
+		{
+		if(str.charAt(i)==' ' && str.charAt(i+1)!=' ')
+			count++;
+		}
+		System.out.println(count);
 	}
 }
