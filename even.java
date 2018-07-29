@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class odd
+class even
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -8,8 +8,8 @@ class odd
 		int q=sc.nextInt();
 		for(int i=n+1;i<q;i++)
 		{
-			if(i%2!=0)
-				System.out.print(i+" ");
+			if(i%2==0)
+				System.out.print(i+"\t");
 		}
 	}
 }
