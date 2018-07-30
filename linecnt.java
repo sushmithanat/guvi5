@@ -4,7 +4,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class wrdcnt
+class linecnt
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -13,9 +13,17 @@ class wrdcnt
 		int count=1;
 		for(int i=1;i<str.length();i++)
 		{
-			if(str.charAt(i)==' ')
+			if(str.charAt(i)=='.' && str.charAt(i+1)==' ')
 			{
 				count++;	
+			}
+			else if(str.charAt(i)==' ' && str.charAt(i+1)==' ')
+			{
+				count++;
+			}
+			else if(str.charAt(i)=='.')
+			{
+				count++;
 			}
 		}
 		System.out.println(count);
