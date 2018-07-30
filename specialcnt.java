@@ -4,7 +4,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class specialcharcnt
+class specialcnt
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -14,9 +14,11 @@ class specialcharcnt
 		for(i=0;i<str.length();i++)
 		{
 			int ch=str.charAt(i);
-			if(ch>=33 && ch<=47)
+			if(ch>=33 && ch<=45)
 				count++;
 			else if(ch>=58 && ch<=64)
+				count++;
+			else if(ch==47)
 				count++;
 			else if(ch>=91 && ch<=96)
 				count++;
