@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class find1
+class nfind
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -22,7 +22,7 @@ class find1
 				break;
 			}
 			else if(i==n)
-				System.out.println("no");
+				System.out.println("yes");
 			else
 			{
 				
