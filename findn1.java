@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class findn
+class find1
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -16,8 +16,17 @@ class findn
 		int i;
 		for(i=l;i<=r;i++)
 		{
-			if(i==n)
-				System.out.println("yes");
+			if(i==l)
+			{
+				System.out.println("no");
+				break;
+			}
+			else if(i==n)
+				System.out.println("no");
+			else
+			{
+				
+			}
 		}
 		if(i==r)
 			System.out.println("no");
